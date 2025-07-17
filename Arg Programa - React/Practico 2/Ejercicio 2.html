@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La calculadora testaruda</title>
+    <link rel="stylesheet" href="./Ejercicio 2.css">
+    <script src="./Ejercicio 2.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="wrapper"> 
+            <div>
+                <label id="">Resultado</label>
+                <h3 id="resultado" class="resultado">-</h3>
+            </div>
+            <form>
+                <div class="operando">
+                    <label for="operando1">Primer Operando</label>
+                    <input type="number" name="operando1" id="operando1">
+                </div>
+                <div class="operando">
+                    <label for="operando2">Segundo Operando</label>
+                    <input type="number" name="operando2" id="operando2">
+                </div>
+                <div class="operadores">
+                    <button type="button" class="btn-operador" onclick="suma(mostrarResultado)">+</button>
+                    <button type="button" class="btn-operador" onclick="resta(mostrarResultado)">-</button>
+                    <button type="button" class="btn-operador" onclick="multiplicacion(mostrarResultado)">*</button>
+                    <button type="button" class="btn-operador" onclick="divicion(mostrarResultado)">/</button>
+                </div>      
+            </form>
+        </div>
+    </div>
+</body>

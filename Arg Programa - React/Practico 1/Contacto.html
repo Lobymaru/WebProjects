@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros No Pagamos Cooperativa - Contacto</title>
+    <link rel="stylesheet" href="./Contacto.css">
+    <script src="./Contacto.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="headerLogo">
+            <div style="color: red;">No &nbsp</div>
+            <div style="color: orange;">Pa </div>
+            <div style="color: yellow;">ga</div>
+            <div style="color: green;">mos &nbsp</div>
+            <div style="color: blue;">Coope</div>
+            <div style="color: indigo;">rati</div>
+            <div style="color: violet;">va &nbsp</div>
+            <sup style="color: aliceblue"><b> <small> Seguros </small></b></sup>
+        </h2>
+    </header>
+    <form>
+        <h3>Contacto</h3>
+        <label for="campoNombre" class="labelContacto">Nombre:</label>
+        <input type="text" id="campoNombre" placeholder="Nombre">
+        <br>
+        <label for="campoApellido" class="labelContacto">Apellido:</label>
+        <input type="text" id="campoApellido" placeholder="Apellido">
+        <br>
+        <label for="campoDNI" class="labelContacto">DNI:</label>
+        <input type="text" id="DNI" placeholder="DNI">
+        <br>
+        <label for="campoMail" class="labelContacto">Dirección de correo:</label>
+        <input type="email" id="campoMail" placeholder="correo@ejemplo.com">
+        <br>
+        <label for="campoTelefono" class="labelContacto">Telefono:</label>
+        <input type="number" id="campoTelefono" placeholder="Telefono">
+        <br>
+        <label for="campoTipoSeguro" class="labelContacto">Tipo de Seguro:</label>
+        <div>
+            <input type="radio" onclick="mostrarPrecio(500)" name="tipoSeguro" id="seguroBasico" value="Básico">
+            <label for="seguroBasico">Básico</label>
+            <input type="radio" onclick="mostrarPrecio(1000)" name="tipoSeguro" id="seguroIntermedio" value="Intermedio">
+            <label for="seguroIntermedio">Intermedio</label>
+            <input type="radio" onclick="mostrarPrecio(1500)" name="tipoSeguro" id="seguroPremium" value="Premium">
+            <label for="seguroPremium">Premium</label>
+        </div>
+        <h3 id="precio" style="color:green; margin: 4px 15px"></h3>
+        <button type="submit" onclick="contactar()">Enviar</button>
+    </form>
+</body>
+
+</html>

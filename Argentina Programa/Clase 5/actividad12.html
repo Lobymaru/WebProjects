@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio 5 - Actividad 12</title>
+
+        <script type="text/javascript" src=".\clase5Comportamientos.js"></script>
+    </head>
+
+    <body>
+
+        <form >
+            <label for="campoNombre">Nombre del cliente:</label>
+            <br>
+            <input type="text" id="campoNombre">
+            <br>
+            <label for="campoMaterial">Material de la caja:</label>
+            <select id="campoMaterial" name="material">
+                <option value="madera">Madera</option>
+                <option value="carton">Carton</option>
+                <option value="aluminio">Aluminio</option>
+            </select>
+            <br>
+            <label for="campoTamaño">Seleccione una dimension para la caja:</label>
+            <div>
+                <input type="radio" id="sizeDiminuta" name="boxSize" value="diminuta">
+                <label for="sizeDiminuta">Diminuta</label><br>
+                <input type="radio" id="sizeMediano" name="boxSize" value="mediano">
+                <label for="sizeMediano">Mediano</label><br>
+                <input type="radio" id="sizeGrande" name="boxSize" value="grande">
+                <label for="sizeGrande">Grande</label>               
+            </div>
+            <br>
+            <label for="campoComentarios">Comentarios:</label>
+            <br>
+            <textarea name="Comentarios" id="campoComentarios" cols="21" rows="5"></textarea>
+            <br>
+            <button type="submit" onclick="armarCaja()">Enviar</button>
+        </form>
+
+
+        <footer>
+            <br>
+            <button><a href=".\index.html"> volver </a></button>
+        </footer>
+    </body>

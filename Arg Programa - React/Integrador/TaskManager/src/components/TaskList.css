@@ -1,0 +1,8 @@
+li{
+   list-style-type:none;
+}
+
+.list-of-Tasks{
+   flex-wrap:wrap;
+   justify-content: center;
+}

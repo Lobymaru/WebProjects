@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio 5 - Actividad 13</title>
+
+        <script type="text/javascript" src=".\clase5Comportamientos.js"></script>
+    </head>
+
+    <body>
+
+        <div style="margin-bottom: 10px;">
+            <h1 style="color:blue">RandomGuesser</h1><br>
+            <h2>Adivine el numero entre el 0 y el 5!</h2>
+            <h3>Presione "Nuevo juego" para empezar a jugar</h3><br>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <h4 style="">
+                Vidas: 
+                <h4 style="color: green" id="vidas"></h4>
+            </h4>
+            
+            <label for="numeroUsuario">Su numero:</label>
+            <input type="text" id="numeroUsuario" value="">            
+        </div>
+
+        <div style="margin-bottom: 10px;">
+            <button disabled="disabled" id="buttonGuess" onclick="guessNumber()" style="margin-right: 15px;">Adivinar</button>
+            <button onclick="newGame()">Nuevo Juego</button>
+        </div>
+
+        <div>
+            <h3 id="acierto" style="color:chartreuse"></h3>
+            <h3 id="fallo" style="color:crimson"></h3>
+        </div>
+
+        <footer>
+            <br>
+            <button><a href=".\index.html"> volver </a></button>
+        </footer>
+    </body>

@@ -1,0 +1,17 @@
+Tengo desarrollada la siguiente función en javascript
+
+function suma (a,b,callback){
+	let c = a +b;
+	callback();
+}
+
+
+♦¿Que es el tercer parámetro recibido?
+	El tercer parámetro recibido se trata de una función de callback. 
+	Se suelen utilizar a menudo para continuar con la ejecución del código despues de que se haya completado una operacion asincrónica.
+
+♦¿En que casos es obligatorio desarrollar este tipo de funciones?
+	Es obligatorio el desarrollo de este tipo de funciones cuando se trabajan con APIs ya que nunca se sabe cuanto pueden tardar en devolver los datos necesarios para trabajar, y si otra parte del codigo depende de ese dato, el trabajar de manera asincrona podria resultar en un "crash" del programa al querer ejecutar un codigo q todavia no tiene la data necesaria.
+
+♦Realizar un llamado a la función de ejemplo
+	suma(num1, num2, limpiarInputs)
